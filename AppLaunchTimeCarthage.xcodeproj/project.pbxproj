@@ -12,6 +12,7 @@
 		D16FBB0E1D28C86D00DF3E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16FBB0C1D28C86D00DF3E9E /* Main.storyboard */; };
 		D16FBB101D28C86D00DF3E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16FBB0F1D28C86D00DF3E9E /* Assets.xcassets */; };
 		D16FBB131D28C86D00DF3E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16FBB111D28C86D00DF3E9E /* LaunchScreen.storyboard */; };
+		D16FBB221D294B2100DF3E9E /* SwiftDate.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = D16FBB201D294B2100DF3E9E /* SwiftDate.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		D16FBB0F1D28C86D00DF3E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16FBB121D28C86D00DF3E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D16FBB141D28C86D00DF3E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16FBB1F1D294B2100DF3E9E /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftDate.framework; sourceTree = "<group>"; };
+		D16FBB201D294B2100DF3E9E /* SwiftDate.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftDate.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 		D16FBB071D28C86D00DF3E9E /* AppLaunchTimeCarthage */ = {
 			isa = PBXGroup;
 			children = (
+				D16FBB1A1D29498B00DF3E9E /* Frameworks */,
 				D16FBB081D28C86D00DF3E9E /* AppDelegate.swift */,
 				D16FBB0A1D28C86D00DF3E9E /* ViewController.swift */,
 				D16FBB0C1D28C86D00DF3E9E /* Main.storyboard */,
@@ -62,6 +66,15 @@
 				D16FBB141D28C86D00DF3E9E /* Info.plist */,
 			);
 			path = AppLaunchTimeCarthage;
+			sourceTree = "<group>";
+		};
+		D16FBB1A1D29498B00DF3E9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D16FBB1F1D294B2100DF3E9E /* SwiftDate.framework */,
+				D16FBB201D294B2100DF3E9E /* SwiftDate.framework.dSYM */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +137,7 @@
 			files = (
 				D16FBB131D28C86D00DF3E9E /* LaunchScreen.storyboard in Resources */,
 				D16FBB101D28C86D00DF3E9E /* Assets.xcassets in Resources */,
+				D16FBB221D294B2100DF3E9E /* SwiftDate.framework.dSYM in Resources */,
 				D16FBB0E1D28C86D00DF3E9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +263,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/AppLaunchTimeCarthage",
+				);
 				INFOPLIST_FILE = AppLaunchTimeCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.AppLaunchTimeCarthage;
@@ -260,6 +279,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/AppLaunchTimeCarthage",
+				);
 				INFOPLIST_FILE = AppLaunchTimeCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stayrealhk.AppLaunchTimeCarthage;
